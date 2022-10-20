@@ -5,6 +5,8 @@
   --accent-color: #2196f3;
   --dark-color: #2f303a;
   --light-color: #f5f4fa;
+  --primary-font-size: 14px;
+  --secondary-font-size: 16px;
 }
 
 body {
@@ -27,6 +29,10 @@ body {
   color: var(--accent-color);
 }
 
+.list {
+  list-style: none;
+}
+
 .link {
   text-decoration: none;
 }
@@ -34,7 +40,7 @@ body {
 .site-nav .link {
   color: var(--secondary-color);
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--primary-font-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -42,7 +48,7 @@ body {
 .contacts-nav .link {
   color: var(--primary-color);
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--primary-font-size);
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
@@ -71,7 +77,7 @@ body {
   color: var(--thirdy-color);
   background-color: var(--accent-color);
   font-weight: 700;
-  font-size: 16px;
+  font-size: var(--secondary-font-size);
   line-height: 1.9;
   letter-spacing: 0.06em;
   cursor: pointer;
@@ -83,16 +89,14 @@ body {
 .features-subtitle {
   color: var(--secondary-color);
   font-weight: 700;
-  font-size: 14px;
+  font-size: var(--primary-font-size);
   line-height: 1.1;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .features-descr {
-  font-size: 14px;
+  font-size: var(--primary-font-size);
   line-height: 1.7;
-  letter-spacing: 0.03em;
 }
 
 .works-title,
@@ -101,7 +105,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 
 .team {
@@ -111,25 +114,28 @@ body {
 .team-subtitle {
   color: var(--secondary-color);
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--secondary-font-size);
   line-height: 1.2;
-  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .team-descr {
-  font-size: 16px;
+  font-size: var(--secondary-font-size);
   line-height: 1.2;
-  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .footer {
   background-color: var(--dark-color);
 }
 
+.footer > .logo {
+  color: var(--thirdy-color);
+}
+
 .address {
-  font-size: 14px;
+  font-size: var(--primary-font-size);
   line-height: 1.7;
-  letter-spacing: 0.03em;
   font-style: normal;
 }
 
@@ -147,5 +153,30 @@ body {
 .filters-btn {
   background-color: var(--light-color);
   color: var(--secondary-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: var(--secondary-font-size);
+  line-height: 1.6;
+  border-width: 0;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+.filters-btn:hover,
+.filters-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--thirdy-color);
+}
+
+.projects-subtitle {
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects-descr {
+  font-size: var(--secondary-font-size);
+  line-height: 1.9;
 }
